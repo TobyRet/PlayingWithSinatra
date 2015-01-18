@@ -1,5 +1,3 @@
-require 'sinatra'
-require 'json'
 
 class Integer
 	def factors
@@ -11,6 +9,9 @@ class Integer
 		self.factors.size == 2 ? true : false
 	end
 end
+
+require 'sinatra'
+require 'json'
 
 get '/:number' do 
 	content_type :json
