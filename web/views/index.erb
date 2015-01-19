@@ -2,9 +2,13 @@
 <html>
 	<head>
 		<title>Practicing with Sinatra and Angular</title>
-		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+		<script src="js/controllers/test_controller.js"></script>
+		<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
-		This is working
+		<div  ng-app="testApp">
+			<p ng-controller = "TestController">{{ greeting }}</p>
+		</div>
 	</body>
 </html>

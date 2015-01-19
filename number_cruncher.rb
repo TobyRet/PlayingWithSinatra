@@ -17,6 +17,7 @@ require 'json'
 
 configure do
 	set :views, Proc.new { File.join(root, "/web/views") }
+	set :public_folder, File.dirname(__FILE__) + '/web'
 end
 
 get '/' do
