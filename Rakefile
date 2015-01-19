@@ -1,1 +1,1 @@
-task(:default) { require_relative 'test' }
+task(:default) { require './test/test.rb' }

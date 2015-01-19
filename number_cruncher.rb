@@ -10,12 +10,21 @@ class Integer
 	end
 end
 
+
+
 require 'sinatra'
 require 'json'
+
+configure do
+	set :views, Proc.new { File.join(root, "/web/views") }
+end
+
+get '/' do
+	erb :index
+end
 
 get '/:number' do 
 	content_type :json
 	number = params[:number].to_i
 	{ number: number, factors: number.factors, odd: number.odd?, even: number.even?, prime: number.prime? }.to_json
-	
 end
