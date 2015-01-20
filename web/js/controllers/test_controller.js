@@ -4,8 +4,16 @@
 	var testApp = angular.module('testApp', []);
 
 	testApp.controller('TestController', ['$scope', function($scope) {
-			var controller = this;
-			$scope.greeting = "This is working";
+			var testController = this;
+
+			$scope.greeting = "";
+
+			$scope.greetingSubmitted = false;
+
+			testController.submitGreeting = function() {
+					$scope.greetingSubmitted = true;
+			};
+
 	}]);
 
 })();

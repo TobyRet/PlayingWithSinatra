@@ -2,7 +2,7 @@ ENV['RACK_ENV'] = 'test'
 require 'sinatra'
 require 'minitest/autorun'
 require 'rack/test'
-require_relative '../number_cruncher.rb'
+require './number_cruncher.rb'
 
 include Rack::Test::Methods
 
