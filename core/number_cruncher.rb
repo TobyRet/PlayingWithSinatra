@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> commit6747043
 class Integer
 	def factors
 		square_root = self**0.5
@@ -8,3 +12,7 @@ class Integer
 		self.factors.size == 2 ? true : false
 	end
 end
+<<<<<<< HEAD
+=======
+
+>>>>>>> commit6747043

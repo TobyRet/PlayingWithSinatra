@@ -20,10 +20,17 @@
 				</form>
 				<br>
 				<div class="well" ng-show="numberSubmitted">
+<<<<<<< HEAD:main/web/views/index.erb
 					<h3>Results</h3>
 					<p><strong>Number: </strong>{{ results.number }}</p>
 					<p><strong>Factors: </strong><span ng-repeat="factor in results.factors">{{ factor }} </span></p>
 					<p><strong>Prime number? </strong>{{ results.prime }}</p>
+=======
+					<h4>Results for {{ numberData.number }}</h4>
+					<p><strong>Factors: </strong><span ng-repeat="factor in numberData.factors">{{ factor }} </span></p>
+					<p><strong>Prime number? </strong>{{ numberData.prime.toString() | uppercase }}</p>
+					<p><strong>Even? </strong>{{ numberData.even.toString() | uppercase }}</p>
+>>>>>>> commit6747043:web/views/index.erb
 				</div>
 			</div>
 		</div>
