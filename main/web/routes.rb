@@ -2,11 +2,6 @@ require 'sinatra'
 require 'json'
 require './core/number_cruncher.rb'
 
-configure do
-	set :views, Proc.new { File.join(root, "/main/web/views") }
-	set :public_folder, File.dirname(__FILE__) + '/main/web'
-end
-
 get '/' do
 	erb :index
 end

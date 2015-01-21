@@ -3,7 +3,7 @@ require 'sinatra'
 require 'minitest/autorun'
 require 'rack/test'
 require './core/number_cruncher.rb'
-require './routes.rb'
+require './main/web/routes.rb'
 
 include Rack::Test::Methods
 
