@@ -19,7 +19,6 @@
 					$scope.results = response;
 				});
 			};
-
 	}]);
 
 })();
