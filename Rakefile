@@ -1,1 +1,1 @@
-task(:default) { require './test/test.rb' }
+task(:default) { require './test/number_cruncher_test.rb' }
