@@ -1,3 +1,3 @@
-require './number_cruncher.rb'
+require './routes.rb'
 
 run Sinatra::Application
