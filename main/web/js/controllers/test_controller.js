@@ -3,15 +3,21 @@
 
 	var testApp = angular.module('testApp', []);
 
-	testApp.controller('TestController', ['$scope', function($scope) {
+	testApp.controller('TestController', ['$scope', '$http', function($scope, $http) {
 			var testController = this;
 
-			$scope.greeting = "";
+			$scope.number;
 
-			$scope.greetingSubmitted = false;
+			$scope.results;
 
-			testController.submitGreeting = function() {
-					$scope.greetingSubmitted = true;
+			$scope.numberSubmitted = false;
+
+			testController.submitNumber = function(number) {
+				$scope.numberSubmitted = true;
+
+				$http.get('/' + number).success(function(response) {
+					$scope.results = response;
+				});
 			};
 
 	}]);

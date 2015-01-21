@@ -1,10 +1,10 @@
 require 'sinatra'
-require './core/number_cruncher.rb'
 require 'json'
+require './core/number_cruncher.rb'
 
 configure do
-	set :views, Proc.new { File.join(root, "/web/views") }
-	set :public_folder, File.dirname(__FILE__) + '/web'
+	set :views, Proc.new { File.join(root, 'web/views') }
+	set :public_folder, File.dirname(__FILE__) + 'main'
 end
 
 get '/' do
