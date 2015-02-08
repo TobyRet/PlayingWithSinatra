@@ -3,7 +3,9 @@ source 'https://rubygems.org'
 gem 'sinatra'
 gem 'json'
 
-group :test do 
-	gem 'rack-test'
+group :test, :development do 
+	gem 'capybara'
+	gem 'shotgun'
+	gem 'rspec'
 	gem 'rake'
 end
